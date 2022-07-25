@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GitHub草稿</title>
+    <title>GitHub</title>
 </head>
 <body>
 <a name="top">顶部</a><br>
@@ -13,11 +13,37 @@ Hello,world!<br>
 <!--斜体-->
 <em>Hello,world!</em><br>
 <form action="https://www.bilibili.com/" method="get">
-  <p>账号：<input type="text" name="username"></p>
-  <p>密码：<input type="password" name="pwd"></p>
+  <p>账号：<input type="text" name="username" placeholder="请输入账号"></p>
+  <p>密码：<input type="password" name="pwd" placeholder="请输入密码"></p>
   <p>
     <input type="radio" value="boy" name="sex">男
     <input type="radio" value="girl" name="sex">女
+  </p>
+  <p>国家：
+    <select name="列表名称">
+      <option value="china">中国</option>
+      <option value="us">美国</option>
+      <option value="uk">英国</option>
+      <option value="rus">俄国</option>
+      <option value="japan">日本</option>
+    </select>
+  </p>
+  <p> 邮箱：
+    <input type="email" name="email" placeholder="请输入邮箱">
+  </p>
+  <p>身高(cm)：
+    <input type="number" required max="250" min="100" step="1">
+    体重(斤)：
+    <input type="number" required max="500" min="10" step="1">
+  </p>
+  <P>爱好：
+    <input type="checkbox" value="唱" name="hobby">唱
+    <input type="checkbox" value="跳" name="hobby">跳
+    <input type="checkbox" value="rap" name="hobby">rap
+    <input type="checkbox" value="篮球" name="hobby">篮球
+  </P>
+  <p>按钮：
+    <input type="button" value="点击有惊喜！" name="btn1">
   </p>
   <p>
     <input type="submit">
@@ -38,7 +64,7 @@ Hello,world!<br>
   <dd>深圳</dd>
   <dd>广州</dd>
 </dl>
-<a href="https://www.bilibili.com/" target="_blank">点击我好好学习</a><br>
+<a href="https://www.bilibili.com/" target="_blank">点击我好好学习</a><br><br>
 <table border="1">
   <tr>
     <td colspan="3">0.0</td>
@@ -63,7 +89,14 @@ Hello,world!<br>
 
 
 
-
+<p>反馈：
+  <textarea name="textarea" placeholder="请输入反馈意见" cols="50" rows="10"></textarea>
+</p>
+<br>
+<p>
+  <input type="file" name="files">
+  <input type="button" value="上传" name="upload">
+</p>
 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1363473692&site=qq&menu=yes">
   <img border="0" src="http://wpa.qq.com/pa?p=2:1363473692:53"
        alt="你好，加我领取学习资料" title="你好，加我领取小电影"/></a><br>
