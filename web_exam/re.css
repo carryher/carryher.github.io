@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    height: 65px;
+    padding: 0 20px;
+}
+
+header a {
+    color: gold;
+    font-size: 18px;
+    float: left;
+}
+body {
+    background: #f1f0e8;
+}
+strong {
+    font-style: bolder;
+}
+fieldset {
+    width: 560px;
+    height: 250px;
+    padding: 0px 50px;
+    position: absolute;
+    left: 300px;
+    top: 220px;
+}
+fieldset legend {
+    font-size: 30px;
+}
+#button {
+    margin: 10px 20px;
+}
+input {
+    color: #ea80b0;
+}

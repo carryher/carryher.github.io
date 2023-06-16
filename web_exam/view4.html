@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>社会活动</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style type="text/css">
+        .swiper-slide {
+            margin: 15px auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .swiper-slide img {
+            height: 600px;
+        }
+
+        .activity-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            color: gold;
+        }
+
+        .activity-info {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #d5d597;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>社会活动</h1>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="img/a1.png" alt="成立基金">
+            <div class="activity-title">成立个人爱心基金会——丞爱基金</div>
+            <div class="activity-info">2021年6月16日</div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/a2.jpg" alt="河南暴雨捐款">
+            <div class="activity-title">为河南暴雨捐款50万元</div>
+            <div class="activity-info">2021年7月</div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/a3.jpg" alt="海洋保护推广大使">
+            <div class="activity-title">官宣成为WWF海洋保护推广大使</div>
+            <div class="activity-info">2022年6月</div>
+        </div>
+        <div class="swiper-slide">
+            <img src="img/a4.jpg" alt="范丞丞成为乐事品牌代言人">
+            <div class="activity-title">乐事官宣范丞丞成为品牌代言人</div>
+            <div class="activity-info">2022年7月</div>
+        </div>
+    </div>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        loop: true,
+        effect:'cube',
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+<script src="table.js"></script>
+<footer>
+    <div class="footer">
+        &copy;2023 xwl&rxy&fcc.com All Rights Reserved. 丞丞网 版权所有
+    </div>
+</footer>
+</body>
+</html>

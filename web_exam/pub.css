@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    height: 65px;
+    padding: 0 20px;
+}
+
+header a {
+    color: gold;
+    font-size: 18px;
+}
+body {
+    background: #f1f0e8;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #333;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>杂志写真</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+        .magazine {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .magazine-item {
+            margin: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .magazine-img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .magazine-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .magazine-date {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .magazine-type {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        .magazine-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .magazine-title:hover {
+            color: #ff6600;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+
+        .magazine-title:active {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>杂志写真</h1>
+<div class="magazine">
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m1.jpg" alt="杂志封面">
+        <div class="magazine-title">Men`s uno young</div>
+        <div class="magazine-date">2019年04月</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m2.jpg" alt="杂志封面">
+        <div class="magazine-title">伊周</div>
+        <div class="magazine-date">2018年12月刊</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m3.jpg" alt="杂志封面">
+        <div class="magazine-title">NeufMode九号摩登</div>
+        <div class="magazine-date">2018年10月刊</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m4.jpg" alt="杂志封面">
+        <div class="magazine-title">男人风尚Leon Yonug</div>
+        <div class="magazine-date">2019年9月刊</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m5.jpg" alt="杂志封面">
+        <div class="magazine-title">YOHO潮流志</div>
+        <div class="magazine-date">2018年9月刊</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m6.jpg" alt="杂志封面">
+        <div class="magazine-title">时尚先生Esquire</div>
+        <div class="magazine-date">2018年8月刊</div>
+        <div class="magazine-type">内页</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m7.jpg" alt="杂志封面">
+        <div class="magazine-title">时尚COSMO</div>
+        <div class="magazine-date">2019年7月刊</div>
+        <div class="magazine-type">封面</div>
+    </div>
+    <div class="magazine-item">
+        <img class="magazine-img" src="img/m8.jpg" alt="杂志封面">
+        <div class="magazine-title">VOGUE ME</div>
+        <div class="magazine-date">2019年6月刊</div>
+        <div class="magazine-type">内页</div>
+    </div>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+
+<footer>
+    <div class="footer">
+        &copy;2023 xwl&rxy&fcc.com All Rights Reserved. 丞丞网 版权所有
+    </div>
+</footer>
+</body>
+</html>

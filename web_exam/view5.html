@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>人物评价</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .star {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .star-info {
+            flex-basis: 70%;
+            margin-left: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .introduction {
+            font-size: 18px;
+            text-indent: 2em;
+        }
+
+        .quote {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .quote-author {
+            margin-top: 10px;
+            text-align: right;
+            font-style: italic;
+            color: #999;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<div class="main">
+    <h1>人物评价</h1>
+    <div class="star">
+        <div class="photo">
+            <img src="img/12.jpg" alt="范丞丞的照片" height="450px">
+        </div>
+        <div class="star-info">
+            <div class="name">范丞丞</div>
+            <div class="introduction">
+                <p> 范丞丞不仅外形亮眼、气质出众，且青春洋溢、活力十足，
+                    他在《偶像练习生》节目中担任主唱的表现让人感到意外，不仅演唱出色，音乐也有自己的特色。
+                    （新浪娱乐、李荣浩评）范丞丞阳光清爽，其帅帅的样子吸引了众多粉丝，而在《时尚芭莎》的一组写真中，
+                    他则青春灵动、率性自由，在镜头前展现出不一样的自己。（网易娱乐、新浪娱乐评）</p>
+                <p>一向低调内敛、有时又呆萌可爱的范丞丞在《Vogue Me》杂志的一组写真中展现出了冷峻成熟的绅士气质，
+                    并透出了迷离眼神。（电影网评）而范丞丞自参加《偶像练习生》后，他的表现可圈可点，舞台上帅气高冷，
+                    舞台下则是可爱呆萌的行走表情包，且风格百变，能够轻松驾驭各种风格。（国际在线评）</p>
+            </div>
+        </div>
+    </div>
+    <div class="quote">
+        <q>七个小时，没有吵闹，累了一点，真值得。</q>
+        <p class="quote-author">——程孝泽导演在《左肩有你》拍摄过程中的评价</p>
+    </div>
+    <br><br>
+    <p>如果你还想了解更多有关某明星的信息，请访问 <a href="index.html">范丞丞的网站</a>。</p>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+<footer>
+    <div class="footer">
+        &copy;2023 xwl&rxy&fcc.com All Rights Reserved. 丞丞网版权所有
+    </div>
+</footer>
+</body>
+</html>

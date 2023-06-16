@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>主要作品</title>
+    <link type="text/css" rel="stylesheet" href="pub.css">
+    <style>
+        h1 {
+            margin-bottom: 0px;
+        }
+
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .work {
+            margin: 20px 40px;
+        }
+
+        .work-img {
+            width: 300px;
+        }
+
+        .work-title {
+            font-size: 20px;
+            margin-top: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .work-type {
+            font-size: 20px;
+            margin-top: 5px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .scroll-container {
+            padding: 20px 0px;
+            margin-bottom: 30px;
+            height: 560px;
+            width: 100%;
+            box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.2);
+            overflow: hidden; /* 溢出隐藏 */
+            position: relative; /* 让子元素以相对定位的方式移动 */
+        }
+
+        .s-work {
+            margin-top: 15px;
+            white-space: nowrap;
+            z-index: 1;
+            position: absolute;
+            animation: scroll 12s linear infinite; /* 设置动画 */
+        }
+
+        .s-work a {
+            text-decoration: none;
+        }
+
+        @keyframes scroll {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: -40%;
+            }
+        }
+
+        .s-work.pause {
+            animation-play-state: paused; /* 添加暂停的样式 */
+            z-index: 2;
+        }
+
+        .s-work:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .s-work:nth-child(2) {
+            animation-delay: 4s;
+            left: 100%;
+        }
+
+        .s-work:nth-child(3) {
+            animation-delay: 8s;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html">⇦首页</a>
+    <button onclick="togglePlay()">播放/暂停</button>
+</header>
+<h1>主要作品</h1>
+<div class="scroll-container">
+    <div class="s-work">
+        <a href="https://v.qq.com/x/cover/mzc00200ntvrl3h.html">
+            <img class="work-img" src="img/w5.jpg" alt="拨云见日">
+            <div class="work-title">拨云见日</div>
+            <div class="work-type">电影</div>
+        </a>
+    </div>
+    <div class="s-work">
+        <a href="https://v.qq.com/x/cover/mzc00200dhz1q3s/r0041xl438s.html">
+            <img class="work-img" src="img/w6.jpg" alt="门锁" height="428.02px">
+            <div class="work-title">门锁</div>
+            <div class="work-type">电影</div>
+        </a>
+    </div>
+    <div class="s-work">
+        <a href="https://v.qq.com/x/page/w3259xkaji8.html">
+            <img class="work-img" src="img/w8.jpg" alt="左肩有你" height="428.02px">
+            <div class="work-title">左肩有你</div>
+            <div class="work-type">电视剧</div>
+        </a>
+    </div>
+</div>
+
+<div class="works">
+    <div class="work">
+        <img class="work-img" src="img/w1.jpg" alt="要久久爱">
+        <div class="work-title">要久久爱</div>
+        <div class="work-type">电视剧</div>
+    </div>
+    <div class="work">
+        <img class="work-img" src="img/w2.jpg" alt="人生路不熟" height="450px">
+        <div class="work-title">人生路不熟</div>
+        <div class="work-type">电影</div>
+    </div>
+    <div class="work">
+        <img class="work-img" src="img/w3.jpg" alt="了不起的夜晚">
+        <div class="work-title">了不起的夜晚</div>
+        <div class="work-type">电影</div>
+    </div>
+    <div class="work">
+        <img class="work-img" src="img/w4.jpg" alt="曾少年">
+        <div class="work-title">曾少年</div>
+        <div class="work-type">电视剧</div>
+    </div>
+    <div class="work">
+        <img class="work-img" src="img/w7.jpg" alt="灵域">
+        <div class="work-title">灵域</div>
+        <div class="work-type">电视剧</div>
+    </div>
+</div>
+<audio id="myAudio" autoplay loop="true" src="audio/I Don't Gotta Know.mp3"></audio>
+<script src="table.js"></script>
+<script type="text/javascript">
+    const imgs = document.querySelectorAll('.s-work');
+
+    imgs.forEach(img => {
+        // 监听鼠标进入图片事件
+        img.addEventListener('mouseenter', () => {
+            img.classList.add('pause');
+        });
+
+        // 监听鼠标离开图片事件
+        img.addEventListener('mouseleave', () => {
+            img.classList.remove('pause');
+        });
+    });
+</script>
+<footer>
+    <div class="footer">
+        &copy;2023 xwl&rxy&fcc.com All Rights Reserved. 丞丞网 版权所有
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+header {
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+.carousel {
+    height: 600px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel h2 {
+    margin: 0 0 10px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.carousel p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.btn {
+    color: blue;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content h2 {
+    font-size: 36px;
+    margin: 0 10px 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 10px 30px;
+}
+
+.content img {
+    margin: 10px;
+    width: 400px;
+}
+
+.content .bio {
+    text-indent: 2em;
+    max-width: 500px;
+}
+
+footer {
+    font-size: 16px;
+    background-color: #333;
+    height: 100px;
+    color: #fff;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+}
